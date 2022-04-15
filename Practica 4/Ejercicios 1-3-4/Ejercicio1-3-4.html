@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Practica 4</title>
+    <meta charset="utf-8" />
+    <script src="apiGeoLocation.js"></script>
+
+    <style type="text/css">
+      .container {
+        position: relative;
+        left: 45%;
+      }
+
+      .child {
+        position: relative;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="child" id="location1">
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="getLocation"
+          onclick="getLocation1()"
+          value="Ejercicio 1.1"
+        />
+        <div class="child" id="responseEj1"></div>
+      </div>
+      <div class="child" id="location3">
+        <input
+          type="button"
+          class="btn btn-primary"
+          onclick="getlocation3()"
+          id="getlocation3"
+          value="Ejercicio 1.3"
+        />
+        <div class="child" id="responseEj3"></div>
+      </div>
+      <div class="child" id="location4">
+        <input
+          type="button"
+          class="btn btn-primary"
+          onclick="getlocation4()"
+          id="getlocation4"
+          value="Ejercicio 1.4"
+        />
+        <div class="child" id="responseEj4"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>máscara con svg</title>
+    <meta charset="UTF-8">
+    <style>
+      .target {
+        mask: url("circulo.svg#c1");
+        -webkit-mask-box-image: url("circulo.svg");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aplicando una máscara con SVG</h1>
+    <video class="target" height="270" width="480" autoplay>
+        <source src="HelloWorld.mp4"  type="video/mp4">
+        <source src="HelloWorld.webm" type="video/webm">
+        <source src="HelloWorld.ogv"  type="video/ogg">
+    </video>
+  </body>
+</html>

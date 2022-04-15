@@ -1,0 +1,28 @@
+html {
+  font-size: 100%;
+  background-color: #fafafa;
+}
+h1 {
+  font-size: 2rem;
+}
+
+.izquierda {
+  float: left;
+  width: 30%;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.centro {
+  float: left;
+  margin-left: 50px;
+  width: 30%;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.derecha {
+  width: 30%;
+  float: right;
+  font-size: 1rem;
+  line-height: 3;
+}
