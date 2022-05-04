@@ -1,0 +1,145 @@
+a {
+  text-decoration: none;
+}
+.pages {
+  background-image: url(../imagenes/circulos.png);
+  font-size: 16px;
+}
+#dropdown {
+  margin-bottom: 0px;
+}
+
+#dropdown > h1 > a {
+  display: block;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#dropdown > h1 > a:focus {
+  box-shadow: none;
+}
+
+#dropdown > div {
+  padding: 0px;
+  background-color: inherit;
+}
+
+#navbarDropdown > ul > li > a {
+  background-color: inherit;
+  border: 1px solid #f78bc3;
+  box-shadow: none;
+  color: #333;
+  text-shadow: none;
+}
+
+#navbarDropdown > ul > li > a:active {
+  color: #333;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#navbarDropdown > ul > li > a:focus {
+  box-shadow: none;
+  color: #333;
+  text-shadow: none;
+}
+
+#navbarDropdown > ul > li > a:hover {
+  background-color: #f6f6f6;
+}
+
+.imagen {
+  width: 90%;
+}
+
+/* MODIFICACIONES COMPARTIDAS*/
+.textAlingEnd {
+  text-align: end;
+}
+
+.textAlingCenter {
+  text-align: center;
+}
+
+.marginLeftRight {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marginTopButton {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#parrafo {
+  font-size: 14px;
+}
+
+.apartados {
+  color: #f01887;
+  font-size: 20;
+}
+
+.tituloInformacion {
+  color: #f01887;
+}
+
+#atras1 {
+  background-color: #e9e9e9;
+  border-color: #dddddd;
+}
+#atras2 {
+  background-color: #e9e9e9;
+  border-color: #dddddd;
+}
+#atras3 {
+  background-color: #e9e9e9;
+  border-color: #dddddd;
+}
+
+.contacto {
+  width: 100%;
+  background-image: url(../imagenes/fondo_contacto.png);
+  border-top: 2px dashed #333;
+  height: 525px;
+}
+
+.infoContacto h2 {
+  color: #ff6;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  padding-top: 40px;
+}
+.infoContacto p {
+  color: #fff !important;
+  padding-bottom: 6px;
+}
+.infoContacto a {
+  text-decoration: none;
+  color: #fff !important;
+}
+.infoContacto a:hover {
+  color: #ff6 !important;
+  text-decoration: underline;
+}
+
+.entradilla {
+  font-family: "BreeSerifRegular", Arial, Helvetica, sans-serif !important;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+}
+
+.btnPreinscricion {
+  background-color: #b8d30b !important;
+  color: #fff !important;
+}
+
+.drop {
+  background-color: #f01887 !important;
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximun-scale=no">
+    <title>Máster en Enxeñería Informática | Universidade de Vigo</title>
+
+    <meta name="description"
+        content="Web del Máster en Enxeñería Informática de la E.S. de Ingeniería Informática - Campus de Ourense">
+    <meta name="autor" content="Jose Luis Martínez Orge">
+    <meta name="keywords"
+        content="master, ingeniería, informática, ourense, universidad, vigo, estudios, superiores, bolonia, docencia, enxeñaría">
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./jquerymobile/jquery.mobile-1.4.5.min.css" />
+
+    <link rel="stylesheet" href="./themes/practica6theme.css" />
+    <link rel="stylesheet" href="./themes/practica6theme.min.css" />
+    <link rel="stylesheet" href="./themes/practica6style.css" />
+    <link rel="stylesheet" href="./themes/jquery.mobile.icons.min.css" />
+
+    <script src="./jquery-1.11.1.min.js"></script>
+    <script src="./jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+    <!-- principal -->
+    <div id="principal" data-role="page" class="pages">
+
+        <!-- Cabecera -->
+        <div data-role="header" data-position="fixed" class="drop">
+            <div id="dropdown" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                data-iconpos="right">
+                <h1><a href="#inicio"><img src="imagenes/logo_mei.png" alt="Logo Máster MEI" width="140"
+                            height="78"></a></h1>
+                <div id="navbarDropdown" data-role="navbar">
+                    <ul>
+                        <li><a href="#informacion" data-role="button" class="liNavbar">INFORMACIÓN</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#docentes" data-role="button" class="liNavbar">DOCENTES</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#asignaturas" data-role="button" class="liNavbar">PLAN DE ESTUDIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div data-role="content" data-theme="b">
+            <div class="textAlingCenter">
+                <img class="imagen" src="imagenes/slogan.png" alt="A túa formación é o teu futuro">
+            </div>
+            <div class="textAlingCenter marginTopButton">
+                <img class="imagen" src="imagenes/asterisco.png" alt="E.S. de Ingeniería Informática"><br><br><br>
+                <div class="marginLeftRight textAlingEnd">
+                    <p class="intro">O Máster Universitario en Enxeñaría Informática pola Universidade de Vigo ten como
+                        obxectivo primordial a preparación de profesionais altamente cualificados, capaces de
+                        planificar, deseñar, dirixir, coordinar e xestionar proxectos, produtos, procesos e instalacións
+                        en todos os ámbitos da Enxeñaría Informática.</p>
+                    <p class="intro">Este Máster ten unha carga docente de 90 ECTS, impártese durante tres cuadrimestres
+                        (un curso e medio), e ten tres orientacións ou intensificaciones cun elevado nivel de
+                        empleabilidad na contorna socioeconómica galega e nacional.</p>
+                </div>
+            </div>
+            <div class="marginTopButton">
+                <div class="marginLeftRight" data-theme="a">
+                    <h3 class="apartados">¿Que é Bolonia?</h3>
+                    <p>Infórmate de todas os cambios e connotacións sobre os plan de estudios actuales.</p><br>
+                    <img src="imagenes/link.png" width="9" height="9" class="iconoContacto">
+                    <a href="http://www.queesbolonia.gob.es/" target="_blank">Ir á web do Ministerio de Educación</a>
+                </div>
+                <div class="marginLeftRight">
+                    <h3 class="apartados">Máster en Enxeñería Informática</h3>
+                    <p>Información adicional e máis extensa (memoria, especialidades, sistema de calidade,...) sobre o
+                        máster MEI que imparte a Escola Superior de Enxeñeria Informática</p><br>
+                    <img src="imagenes/link.png" width="9" height="9" class="iconoContacto">
+                    <a href="http://www.esei.uvigo.es/index.php" target="_blank">E.S. de Enxeñería Informática</a><br>
+                    <img src="imagenes/video.png" width="9" height="9" class="iconoContacto"><a
+                        href="http://www.youtube.com/watch?v=fdwDHSAYuEA?autoplay=1" target="_blank" class="video">Vídeo
+                        da ESEI</a>
+                </div>
+                <div class="marginLeftRight">
+                    <h3 class="apartados">FAQ</h3>
+                    <p>¿Por qué che interesa cursar este Máster?. En pouco tempo poderás obter (ou actualizar a túa
+                        titulación) o grado superior de Máster.</p><br>
+                    <img src="imagenes/link.png" width="9" height="9" class="iconoContacto">
+                    <a href="#faq" class="faqPrincipal">Ir á FAQ</a>
+                </div>
+                <div class="marginLeftRight">
+                    <h3 class="apartados">Preinscríbete xa!!</h3>
+                    <p>O segundo prazo de preinscrición será do 27 de agosto ao 3 de setembro de 2013.</p><br>
+                    <a class="ui-btn ui-btn-inline btnPreinscricion"
+                        href="http://www.uvigo.es/uvigo_gl/administracion/alumnado/posgrao/matricula2013/"
+                        target="_blank">Facer a preinscrición !</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Pie de página -->
+        <div data-role="footer" data-theme="c" data-id="footer" class="contacto">
+            <div class="marginLeftRight marginTopButton">
+                <div class="infoContacto">
+                    <h2>COORDINADOR</h2>
+                    <p class="entradilla">Jose Ramón Méndez Reboredo<br>Profesor Contratado Doctor do Departamento de
+                        Informática<br>Universidade de Vigo<br><br>Tlfno 647 343 110:<br><a
+                            href="mailto:coordinador.mei.esei@uvigo.es">email: coordinador.mei.esei@uvigo.es</a></p>
+                    <p class="entradilla"><a href="http://master.enxeñeriainformatica.es"
+                            target="blank">http://master.enxeñeriainformatica.es</a><br><a
+                            href="http://www.esei.uvigo.es" target="blank">http://www.esei.uvigo.es</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--informacion-->
+    <div data-role="page" id="informacion" class="paginas">
+        <!-- Cabecera -->
+        <div data-role="header" data-position="fixed" class="drop">
+            <div id="dropdown" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                data-iconpos="right">
+                <h1><a href="#inicio"><img src="imagenes/logo_mei.png" alt="Logo Máster MEI" width="140"
+                            height="78"></a></h1>
+                <div id="navbarDropdown" data-role="navbar">
+                    <ul>
+                        <li><a href="#informacion" data-role="button" class="liNavbar">INFORMACIÓN</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#docentes" data-role="button" class="liNavbar">DOCENTES</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#asignaturas" data-role="button" class="liNavbar">PLAN DE ESTUDIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Contenido -->
+        <div data-role="content">
+            <div class="marginLeftRight marginTopButton textAlingEnd">
+                <h2 class="tituloInformacion">90 CRÉDITOS ECTS<br>25 PLAZAS</h2>
+                <p class="entradilla">Curso 2013/2014<br>Matrícula a tempo completo ou parcial</p>
+            </div>
+
+            <div class="marginLeftRight">
+
+                <h3 class="title">ACCESO Ó MÁSTER</h3>
+                <p>Poderán acceder ao master aqueles alumnos que estén en disposición dun dos seguintes títulos
+                    académicos:</p>
+                <p>- Grao en Informática<br>- Enxeñería Téc. en Informática de Xestión, Enxeñería Téc. en Informática de
+                    Sistemas ou Diplomado en Informática<br>- Enxeñería ou Licenciatura en Informática<br>- Títulos de
+                    Grao da rama de Arquitectura e Enxeñería<br>- Títulos de Grao da rama de Ciencias<br>- Outros
+                    títulos obtidos en sistemas educativos alleos ao EEES sin necesidade de homologación dos mesmos</p>
+                <p>
+                    <img src="imagenes/link.png" width="9" height="9" class="iconoContacto">
+                    <a href="docs/convalidacions_master.pdf" target="_blank">Ver táboa de convalidacións</a>
+                </p><br>
+                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                    data-inset="false" data-iconpos="right">
+                    <h4>Ver condicións específicas de admisión para certos colecttivos</h4>
+
+                    <p><strong>Títulos de Grao da rama de Arquitectura e Enxeñería:</strong> En base ao establecido no
+                        Anexo I da Resolución de 8 de xuño de 2009 (BOE 4-agosto- 2009), da Secretaría Xeral de
+                        Universidades, os alumnos que proveñan das titulacións da Rama de Arquitectura e Enxeñería
+                        deberán acreditar ter cursado o módulo de formación básica e o módulo común á rama, aínda non
+                        cubrindo un bloque completo do módulo de tecnoloxía específica e sí 48 créditos dos ofertados no
+                        conxunto dos bloques de dito módulo dun título de grao vinculado co exercicio da profesión de
+                        Enxeñeiro Técnico en Informática.
+                    </p>
+                    <p><strong>Títulos de Grao da rama de Ciencias:</strong> os alumnos que proveñan de titulacións da
+                        rama de Ciencias, a Comisión académica establecerá os complementos formativos previos que deberá
+                        acreditar o solicitante segundo cada caso, en función da titulación de orixe.</p>
+                    <p><strong>Outros títulos obtidos en sistemas educativos alleos ao EEES sin necesidade de
+                            homologación:</strong> A Universidade de Vigo comprobará que dito título acredita un nivel
+                        de formación equivalente aos correspondentes títulos universitarios oficiaies españois e que
+                        ditto título faculta no país expedidor, para o acceso ás ensinanzas de posgrao (de acordo co
+                        Real Decreto 1393/2007).</p>
+                </div><br>
+
+
+                <h3 class="title">PERFIL DE INGRESO</h3>
+                <p>Aínda que se permite a formación de diversos colectivos, existen dous prefiles de ingreso
+                    fundamentais:</p>
+                <p>1) Persoas que se atopen en disposición do título de Grao en Enxeñería informática e que desexen
+                    continuar os estudios para obter unha titulación de segundo ciclo</p>
+                <p>2) Alumnos que se atopen en disposición de distintos títulos LRU relacionados coa informática
+                    (Enxeñeiro Técnico en Informática, Diplomando en Informática, Enxeñeiro en Informática ou Licenciado
+                    en Informática) e que desean transformar o seu título para adaptar o seu currículo á nova estrutura
+                    de formación definida polo Espazo Superior de Educación Europeo.</p><br>
+                <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                    data-inset="false" data-iconpos="right">
+                    <h4>Obxectivos e capacidades adquiridas</h4>
+
+                    <p>1) Capacidade para proxectar, calcular e deseñar produtos, procesos e instalacións en todos os
+                        ámbitos da Enxeñaría Informática.</p>
+                    <p>2) Capacidade para a dirección de obras e instalacións de sistemas informáticos, cumprindo a
+                        normativa vixente e asegurando a calidade do servizo.</p>
+                    <p>3) Capacidade para dirixir, planificar e supervisar equipos multidisciplinares.</p>
+                    <p>4) Capacidade para o modelado matemático, cálculo e simulación en centros tecnolóxicos e de
+                        enxeñaría de empresa, particularmente en tarefas de investigación, desenvolvemento e innovación
+                        en todos os ámbitos relacionados coa Enxeñaría en Informática.</p>
+                    <p>5) Capacidade para a elaboración, planificación estratéxica, dirección, coordinación e xestión
+                        técnica e económica de proxectos en todos os ámbitos da Enxeñaría en Informática seguindo
+                        criterios de calidade e ambientais.</p>
+                    <p>6) Capacidade para a dirección xeral, dirección técnica e dirección de proxectos de
+                        investigación, desenvolvemento e innovación, en empresas e centros tecnolóxicos, no ámbito da
+                        Enxeñaría Informática.</p>
+                    <p>7) Capacidade para a posta en marcha, dirección e xestión de procesos de fabricación de equipos
+                        informáticos, con garantía da seguridade para as persoas e bens, a calidade final dos produtos e
+                        a súa homologación.</p>
+                    <p>8) Capacidade para a aplicación dos coñecementos adquiridos e de resolver problemas en contornas
+                        novas ou pouco coñecidos dentro de contextos máis amplos e multidisciplinares, sendo capaces de
+                        integrar estes coñecementos.</p>
+                    <p>9) Capacidade para comprender e aplicar a responsabilidade ética, a lexislación e a deontología
+                        profesional da actividade da profesión de Enxeñeiro en Informática.</p>
+                    <p>10) Capacidade para aplicar os principios da economía e da xestión de recursos humanos e
+                        proxectos, así como a lexislación, regulación e normalización da Informática.</p>
+                </div><br>
+
+                <h3 class="title">PARA AFRONTAR OS ESTUDOS</h3>
+                <p><img src="imagenes/link.png" width="9" height="9" class="iconoContacto"><a
+                        href="http://www.mecd.gob.es/educacion/becas-y-ayudas/para-estudiar/master.html"
+                        target="_blank">Becas do M. Educ. e Ciencia para Máster</a>.</p>
+                <p><img src="imagenes/link.png" width="9" height="9" class="iconoContacto"><a
+                        href="https://www.uvigo.es/uvigo_gl/investigacion/axudas_2009/" target="_blank">Axudas
+                        específicas da Universidade de Vigo</a>: Dentro do apartado VI das axudas propias da
+                    Universidade de Vigo contémplanse axudas específicas para a colaboración con grupos de
+                    investigación.</p>
+                <br>
+
+                <h3 class="title">PARA COMPATIBILIZAR CON ACTIVIDADES LABORAIS</h3>
+                <p><img src="imagenes/link.png" width="9" height="9" class="iconoContacto"><a
+                        href="http://www.permisoindividualdeformacion.com" target="_blank">Permiso Individual de
+                        Formación (PIF)</a>: Todos os traballadores dispoñen de hasta 200 horas/ano para recibir
+                    formación acreditada oficialmente durante a súa xornada laboral.</p>
+                <br>
+
+                <h3 class="title">MÁIS INFORMACIÓN SOBRE O MÁSTER EN ENXEÑERÍA INFORMÁTICA</h3>
+                <img src="imagenes/link.png" width="9" height="9" class="iconoContacto"><a
+                    href="http://www.esei.uvigo.es/index.php?id=273" target="_blank">Máis información sobre o Máster na
+                    web da E.S. de Enxeñería Informática</a><br>
+                <img src="imagenes/link.png" width="9" height="9" class="iconoContacto"><a
+                    href="http://www.esei.uvigo.es/index.php?id=298" target="_blank">Acceso ós documentos da Memoria do
+                    Máster e o Sistema de Garantía de Calidade</a>
+            </div><br><br><br>
+
+            <div class="marginLeftRight">
+                <h3>CRITERIOS DE VALORACIÓN</h3>
+                <p>O ordeamento da entrada de estudiantes farase mediante a nota media do expediente académico do título
+                    de acceso</p><br>
+                <h3>COMPLEMENTOS FORMATIVOS</h3>
+                <p>No caso de alumnos que accederan mediante as titulacións de Enxeñería Técnica en Informática de
+                    Xestión, Enxeñería Técnica en Informática de Sistemas e Diplomado en Informática, estes deben cursar
+                    30 créditos ECTS que poderán ser obtidos cursando asignaturas obligatorias Grao en Informática pola
+                    Universidade de Vigo. Consulta a FAQ para máis información si estás nun destes casos.</p><br>
+                <h3>TEMPO PARCIAL</h3>
+                <p>Permitirase a matrícula a tempo parcial únicamente a aqueles alumnos que demostren documentalmente
+                    algunha das condicións seguintes: a) ser traballadores en activo, b) estar cursando outra titulación
+                    universitaria o c) situacións excepcionais que valorará a Comisión Académica do Máster.</p><br>
+                <h3>FORMACIÓN CONTÍNUA</h3>
+                <p>Non se permite a formación contínua.</p><br>
+                <h3>ALUMNADO ESTRANXEIRO</h3>
+                <p>Tal como se comentou anteriormente, cando se acceda dende un título non homologado, a Universidade de
+                    Vigo comprobará que dito título acredita un nivel de formación equivalente aos correspondentes
+                    títulos universitarios oficiais españois e que facultan no país expedidor do título para o acceso ás
+                    ensinanzas de posgrao (de acordo co Real Decreto 1393/2007).</p><br><br>
+            </div>
+
+            <div class="marginLeftRight">
+                <a id="atras3" class="ui-btn ui-btn-inline " data-rel="back">Atrás</a>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div data-role="footer" data-theme="c" data-id="footer" class="contacto">
+            <div class="marginLeftRight marginTopButton">
+                <div class="infoContacto">
+                    <h2>COORDINADOR</h2>
+                    <p class="entradilla">Jose Ramón Méndez Reboredo<br>Profesor Contratado Doctor do Departamento de
+                        Informática<br>Universidade de Vigo<br><br>Tlfno 647 343 110:<br><a
+                            href="mailto:coordinador.mei.esei@uvigo.es">email: coordinador.mei.esei@uvigo.es</a></p>
+                    <p class="entradilla"><a href="http://master.enxeñeriainformatica.es"
+                            target="blank">http://master.enxeñeriainformatica.es</a><br><a
+                            href="http://www.esei.uvigo.es" target="blank">http://www.esei.uvigo.es</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--asignaturas-->
+    <div data-role="page" id="asignaturas" class="paginas">
+
+        <!-- Cabecera -->
+        <div data-role="header" data-position="fixed" class="drop">
+            <div id="dropdown" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                data-iconpos="right">
+                <h1><a href="#inicio"><img src="imagenes/logo_mei.png" alt="Logo Máster MEI" width="140"
+                            height="78"></a></h1>
+                <div id="navbarDropdown" data-role="navbar">
+                    <ul>
+                        <li><a href="#informacion" data-role="button" class="liNavbar">INFORMACIÓN</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#docentes" data-role="button" class="liNavbar">DOCENTES</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#asignaturas" data-role="button" class="liNavbar">PLAN DE ESTUDIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div data-role="content">
+
+            <div class="marginLeftRight marginTopButton ">
+                <h2 class="tituloInformacion">ADAPTADO AS NECESIDADES<br>PROFESIONAIS DE HOXE</h2>
+                <p>90 créditos ECTS, prácticas profesionais en empresas, proxecto fin de Máster, posibilidade de
+                    escoller orientación,...</p>
+            </div>
+
+            <div class="marginLeftRight">
+                <a href="#" class="m1">MÓDULO DE DIRECCIÓN E XESTIÓN (12 ECTS)</a> ·
+                <a href="#" class="m2">MÓDULO DE TECNOLOXÍAS INFORMÁTICAS (48 ECTS)</a> ·
+                <a href="#" class="m3">ORIENTACIÓNS (12 ECTS c/u)</a> ·
+                <a href="#" class="m4">TRABALLO FIN DE MÁSTER (18 ECTS)</a>
+            </div>
+
+            <div class="marginLeftRight"><br>
+                <h3 class="tituloInformacion">CURSO 1</h3>
+
+                <h4 class="">CUADRIMESTRE 1 (20/09/2013-31/01/2014)</h4><br>
+
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Enxeñería do coñecemento</h4>
+                        <p>No contexto da economía global actual, as empresas actuais deben buscar constantemente
+                            métodos e accións que permitan incrementar a sua capacidade competitiva e, deste xeito,
+                            sobrevivir. Neste sentido a enxeñería de coñecemento é cada vez máis popular en negocios
+                            como a distribución comercial, seguros, análise de risco en banca, etc.</p>
+                        <p>Esta materia realiza unha análise práctica e aplicada das tecnoloxías de analise do
+                            coñecemento para a súa aplicación á mellora competitiva empresarial.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Deseño e xestión avanzada de redes</h4>
+                        <p>As certificacións profesionais son o instrumento de garantía de adquisición de competencias
+                            máis empleado polos profesionais actuais unha vez rematada a etapa académica. Algunhas
+                            destas acreditacións expedidas por empresas de gran relevancia gañaron moita popularidade
+                            nos últimos anos (Cisco, Microsoft, Oracle ou VMWare).</p>
+                        <p>Os contidos desta materia equipáranse cos módulos terceiro e cuarto do curriculum CISCO CCNA
+                            Exploration nos que se imparte formación sobre encamiñamento intermedio e conmutación así
+                            como teoría de redes WAN. Por outra banda, esta materia será impartida por instructores
+                            CISCO.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Planificación e dirección de proxectos</h4>
+                        <p>Nos últimos anos, a Dirección e Xestión de Proxectos foi recoñecida como unha profesión
+                            independente dentro da estrutura organizacional. Esta profesión conta cos seus propios
+                            colexios e organizacións (www.pmi.org ou www.ipma.ch) e con un crecente corpo de técnicas e
+                            ferraamentas, habilidades, competencias e procedementos.</p>
+                        <p>Nesta materia esporanse e adquiriranse as competencias sobre Dirección e Xestión de Proxectos
+                            establecidas no Project Management Institute e que son a base dos coñecementos e habilidades
+                            necesarias para a obtención da Certificación Internacional PMI.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Sistemas gráficos interactivos</h4>
+                        <p>A industria de contidos dixitais representa máis da metade da facturación total dos contidos
+                            e servizos audiovisuais que se consumen no noso país. Segundo o Observatorio Nacional das
+                            Telecomunicacións e da Sociedade, o 93% do negocio corresponde aos videoxogos, no cal,
+                            estase experimentando un gran crecemento do contido online debido ao ocio interactivo
+                            baseado na “nube”. Estes contidos interactivos teñen unha gran compoñente gráfica.</p>
+                        <p>Nesta materia presentaranse as tecnoloxías máis punteiras para a creación, edición e
+                            distribución de contidos gráficos interactivos independentemente do dispositivo e de si o
+                            contido é online ou non.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Sistemas de información</h4>
+                        <p>As aplicacións de xestión empresarial forman parte do núcleo das medianas e grandes empresas
+                            do noso país, así como as Administracións públicas. O deseño e implementación destas
+                            aplicacións e a explotación da información mediante business inteligence son unhas das
+                            disciplinas máis demandada por estas empresas que manexan grandes volumes de información.
+                        </p>
+                        <p>Esta materia capacita ao alumno para estas tarefas, mediante a realización práctica deste
+                            tipo de proxectos software, seguido metodologías áxiles e programando con frameworks
+                            empresariais punteiros (Java EE, Hibernate, ZK Framework, JSF,...), así como no uso eficaz
+                            de ferramentas de business inteligence.</p>
+                    </div>
+                </div><br>
+
+
+                <h4 class="h4">CUADRIMESTRE 2 (3/02/2014-6/06/2014)</h4><br>
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Auditoría e certificación da calidade de SI</h4>
+                        <p>Unha boa parte da facturación das empresas TIC galegas provén dos contratos con
+                            administracións públicas e grandes empresas acadados mediante os procesos de licitación
+                            pública ou privada. Actualmente, para plantexar con éxito unha oferta neste tipo de procesos
+                            é necesario implementar metodoloxías de calidade dos procesos e contar con certificacións
+                            dos mesmos xa que é habitual que formen parte dos requisitos de participación ou dos
+                            criterios de avaliación das ofertas.</p>
+                        <p>Esta materia conten a formación para que o alumno entenda a necesidade da calidade nos
+                            procesos e a súa implantación sendo posible a amplicación da formación neste ámbito cursando
+                            o módulo de Calidade de Procesos e Servizos Informáticos do segundo curso.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Auditoría e xestión da seguridade</h4>
+                        <p>Con certa frecuencia, a prensa fainos partícipes de incidencias informáticas polas que é
+                            posible ser víctima roubos ou enganos.</p>
+                        <p>Estas incidencias teñen un impacto negativo na imaxe das empresas e derivan en moitos casos
+                            en responsabilidades legais. Esta materia invita ao alumno a facer un percorrido ámplo sobre
+                            as principais áreas de seguridade dos sistemas informáticos e as súas solucións.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Dirección e xestión da innovación</h4>
+                        <p>Hoxe en día, a capacidade competitiva das empresas, especialmente daquelas relacionadas co
+                            sector das TIC, está decisivamente condicionada pola forma en que dirixen e xestionan a
+                            innovación tecnolóxica.</p>
+                        <p>Esta materia pretende axudar aos alumnos a adquirir os coñecementos, capacidades e
+                            habilidades básicas para poder levar a cabo unha análise das necesidades tecnolóxicas da
+                            organización, tendo en conta a posición da competencia, o estudo da contorna, así como os
+                            recursos públicos e privados que poida obter por parte do sistema de I+D+I. A materia debe
+                            contribuír, en especial, a que os alumnos comprendan a necesidade de fomentar a cultura da
+                            innovación na organización.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Computación distribuída e altas prestacións</h4>
+                        <p>O crecemento da demanda de alta capacidade de computación e o aumento dos recursos hardware
+                            están a provocar a popularización de entornos de computación numérica paralela. Dentro deste
+                            campo podemos destacar plataformas de desenvolvemento como MPI, OpenMP ou CUDA. Por outra
+                            banda, o desenvolvemento de grandes sitios web cunha alta demanda de usuarios (como algunhas
+                            redes sociais ou buscadores) introduciu na World Wide Web necesidade de desenvolver técnicas
+                            para combinar a potencia computaciónal distribuida por varios equipos informáticos. Este
+                            feito alimentou a popularidade de produtos de computación distribuída con propositos
+                            dispares como Mysql Cluster, Apache Cassandra, HAProxy, Apache Hadoop, LinuxHA, etc.</p>
+                        <p>Esta materia presenta un paseo práctico polas distintas ferramentas e tecnoloxías empregadas
+                            para a construcción deste tipo de sistemas.</p>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>Sistemas e servizos de internet</h4>
+                        <p>Non se pode concebir ningún sistema web actual sen mencionar conceptos e tecnoloxías como
+                            Mashups, Ajax, CSS ou frameworks como jQuery o MooTools. Coñecer e manexar este tipo de
+                            tecnoloxías de integración permitirá a creación de aplicacións web máis atractivas.</p>
+                        <p>Esta materia fai un repaso das tecnoloxías habituais para o desenvolvemento de sistemas web
+                            de gran calidade.</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="marginLeftRight">
+                <h3 class="tituloInformacion">CURSO 2</h3>
+
+                <h4 class="h4">CUADRIMESTRE 3 (20/09/2013-31/01/2014)</h4><br>
+
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>MÓDULO DE ORIENTACIÓN</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>TRABALLO FIN DE MÁSTER</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="marginLeftRight marginTopButton">
+                <a id="atras2" class=" ui-btn ui-btn-inline" data-rel="back">Atrás</a>
+            </div>
+        </div>
+
+        <!-- Pie de página -->
+        <div data-role="footer" data-theme="c" data-id="footer" class="contacto">
+            <div class="marginLeftRight marginTopButton">
+                <div class="infoContacto">
+                    <h2>COORDINADOR</h2>
+                    <p class="entradilla">Jose Ramón Méndez Reboredo<br>Profesor Contratado Doctor do Departamento de
+                        Informática<br>Universidade de Vigo<br><br>Tlfno 647 343 110:<br><a
+                            href="mailto:coordinador.mei.esei@uvigo.es">email: coordinador.mei.esei@uvigo.es</a></p>
+                    <p class="entradilla"><a href="http://master.enxeñeriainformatica.es"
+                            target="blank">http://master.enxeñeriainformatica.es</a><br><a
+                            href="http://www.esei.uvigo.es" target="blank">http://www.esei.uvigo.es</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--docentes-->
+    <div data-role="page" id="docentes" class="paginas">
+        <!-- Cabecera -->
+        <div data-role="header" data-position="fixed" class="drop">
+            <div id="dropdown" data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                data-iconpos="right">
+                <h1><a href="#inicio"><img src="imagenes/logo_mei.png" alt="Logo Máster MEI" width="140"
+                            height="78"></a></h1>
+                <div id="navbarDropdown" data-role="navbar">
+                    <ul>
+                        <li><a href="#informacion" data-role="button" class="liNavbar">INFORMACIÓN</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#docentes" data-role="button" class="liNavbar">DOCENTES</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#asignaturas" data-role="button" class="liNavbar">PLAN DE ESTUDIOS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Contenido -->
+        <div data-role="content">
+
+            <div class="marginLeftRight marginTopButton ">
+                <h2 class="tituloInformacion">AMPLIA EXPERIENCIA<br>ACADÉMICA E PROFESIONAL</h2>
+                <p class="entradilla">O profesorado do Máster en Enxeñaría Informática está formado por un grupo de
+                    docentes con amplia experiencia académica, investigadora e de desenvolvemento de proxectos
+                    profesionais. Por outra banda, tamén contaremos con varios conferenciantes externos de recoñecido
+                    prestixio.</p>
+            </div>
+
+            <div class="marginLeftRight">
+
+                <div data-role="collapsibleset">
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>CAMPOS BASTOS, CELSO</h4>
+                        <p>Experto na creación de contidos dixitais e a súa adaptación para distintos canles de
+                            distribución así como a creación de ferramentas 3D. É autor de distintos proxectos neste
+                            ámbito realizados en colaboración con empresas e institucións públicas como <a
+                                href="http://www.ourense3d.com" target="_blank">Ourense 3D</a>, <a
+                                href="http://www.creativacultural.com/castros" target="_blank">Industria Cultural
+                                Galicia-Norte de Portugal</a> ou <a href="http://www.sketcharm.com"
+                                target="_blank">Sketch Arm</a>.</p><br>
+                        <img src="imagenes/mail.png" width="9" height="9" alt="e-mail" class="iconoContacto"><a href="#"
+                            class="email">ccampos@uvigo.es</a><br>
+                        <img src="imagenes/phone.gif" width="10" height="10" alt="teléfono" class="iconoContacto"><a
+                            href="#" class="phone">988 387 017</a>
+
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>GÓMEZ RODRÍGUEZ, ALMA</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>GARCÍA LOURENÇO, ANALIA</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>GUEIMONDE CANTO, AN</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>GÓMEZ MEIRE, SILVANA</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>GONZÁLEZ PEÑA, DANIEL</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>MARTÍNEZ ORGE, JOSE LUIS</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>MÉNDEZ REBOREDO, JOSE RAMÓN</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>PÉREZ COTA, MANUEL</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>RODEIRO IGLESIAS, JAVIER</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>RODRÍGUEZ LIÑARES, LEANDRO</h4>
+                    </div>
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u"
+                        data-iconpos="right">
+                        <h4>REBOIRO JATO, MIGUEL</h4>
+                    </div>
+                </div><br>
+
+                <div class="marginLeftRight marginTopButton" data-theme="c">
+                    <a id="atras1" class=" ui-btn ui-btn-inline" data-rel="back">Atrás</a>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de página -->
+        <div data-role="footer" data-theme="c" data-id="footer" class="contacto">
+            <div class="marginLeftRight marginTopButton">
+                <div class="infoContacto">
+                    <h2>COORDINADOR</h2>
+                    <p class="entradilla">Jose Ramón Méndez Reboredo<br>Profesor Contratado Doctor do Departamento de
+                        Informática<br>Universidade de Vigo<br><br>Tlfno 647 343 110:<br><a
+                            href="mailto:coordinador.mei.esei@uvigo.es">email: coordinador.mei.esei@uvigo.es</a></p>
+                    <p class="entradilla"><a href="http://master.enxeñeriainformatica.es"
+                            target="blank">http://master.enxeñeriainformatica.es</a><br><a
+                            href="http://www.esei.uvigo.es" target="blank">http://www.esei.uvigo.es</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
