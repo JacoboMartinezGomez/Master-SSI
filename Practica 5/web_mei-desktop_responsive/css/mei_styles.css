@@ -10,7 +10,6 @@
 /* estilos para la cabecera */
 
 #header {
-	width:100%;
 	height:78px;
 	background-color:#f01887;
 	position:fixed;
@@ -21,11 +20,8 @@
 	box-shadow:         0px 3px 6px rgba(35, 37, 35, 0.40);
 	*/
 }
-
-#contentHeader {
-	width:940px;
-	margin-left:auto;
-	margin-right:auto;
+#navDropdown{
+	background-color:#f01887;
 }
 
 #logo {
@@ -84,17 +80,14 @@
 
 #principal 		{ width:100%; background-image:url(../imagenes/circulos.png); }
 #informacion 	{ width:100%; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
-#plan 			{ width:100%; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
+#plan 			{ width:100%; padding-top:100px; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
 #horarios		{ width:100%; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
-#docentes		{ width:100%; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
+#docentes		{ width:100%; padding-top:100px; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
 #faq 			{ width:100%; background-image:url(../imagenes/circulos.png); border-top: 2px dashed #333; }
 #contacto 		{ width:100%; background-image:url(../imagenes/fondo_contacto.png); border-top: 2px dashed #333; height:525px;}
 
 .seccion {
-	width:940px;
 	padding-top:100px;
-	margin-left:auto;
-	margin-right:auto;
 }
 
 .seccion h2 {
@@ -118,34 +111,28 @@
 }
 
 /* estilos para sección principal */
-#sloganMaster {
-	width:550px;
-	float:left;
-
-}
-
 #infoPrincipal {
-	width:380px;
 	float:right;
+	text-align:right;
 }
 
 /* estilos para sección de docentes */
-.infoGeneral {
+.admision {
 	float:left;
-	width:460px;
+	padding-top: 50px;
 }
 
 .imagenDocentes {
 	float:right;
-	margin-top:-100px;
+	text-align:right;
 }
 
 .infoDocente {
 	font-family:'PTSansRegular', Arial, Helvetica, sans-serif;
 	font-size:12px;
-	width:220px;
 	float:left;
-	margin-right:10px;
+	padding-bottom:15px;
+	padding-top:15px;
 	height:360px;
 	color:#333;
 	border-bottom:1px solid #666;
@@ -181,13 +168,10 @@
 /* estilos para la sección de plan de estudios */
 
 .curso1 {
-	width:620px;
-	margin-right:10px;
 	float:left;
 }
 
 .curso2 {
-	width:300px;
 	float:right;
 }
 
@@ -201,14 +185,10 @@
 }
 
 .s1 {
-	width:300px;
-	margin-right:10px;
 	float:left;
 }
 
 .s2 {
-	width:300px;
-	margin-right:0px;
 	float:right;
 }
 
@@ -245,9 +225,8 @@ h4 {
 
 /* estilos para seccion de horarios */
 .infoHorarios {
-	float:right;
-	width:460px;
 	text-align:right;
+	padding-top:100px;
 }
 .imagenHorarios {
 	float:left;
@@ -278,7 +257,6 @@ table {
 /* estilos para sección de información principal */
 .infoPrincipal {
 	float:right;
-	width:460px;
 	text-align:right;
 }
 
@@ -288,13 +266,9 @@ table {
 }
 
 .admision {
-	width:620px;
-	margin-right:10px;
 	font-family:'PTSansRegular', Arial, Helvetica, sans-serif;
 	font-size:12px;
-	color:#333;
-	float:left;
-}
+	color:#333;}
 
 .admision h3 {
 	font-weight:normal;
@@ -307,11 +281,9 @@ table {
 	
 
 .condiciones {
-	width:300px;
 	font-family:'PTSansRegular', Arial, Helvetica, sans-serif;
 	font-size:12px;
 	color:#333;
-	float:right;
 }
 
 .condiciones h3 {
@@ -341,7 +313,6 @@ table {
 /* estilos para la información de portada */
 
 .intro {
-	width:280px;
 	font-family:'BreeSerifRegular', Arial, Helvetica, sans-serif;
 	font-size:14px;
 	line-height:16px;
@@ -351,9 +322,6 @@ table {
 }
 
 .bloquePortada {
-	width:220px;
-	float:left;
-	margin-right:10px;
 	font-family:'PTSansRegular', Arial, Helvetica, sans-serif;
 	font-size:12px;
 }
@@ -370,7 +338,6 @@ table {
 }
 
 .btnPreinscricion {
-	margin-left:30px;
 	background-color: #B8D30B;
 	display: inline-block;
 	text-align: center;
@@ -389,13 +356,30 @@ a.btnPreinscricion:hover { color:#000; text-decoration:none; }
 /* estilos para seccion de FAQ */
 .infoFAQ {
 	float:right;
-	width:560px;
 	text-align:right;
 }
 
 .bloqueFAQ {
 	clear:both;
 	padding-bottom:100px;
+	display:none;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.bloqueFAQ {
+		display:block;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.bloqueFAQ {
+		border-bottom:block;
+	}
+
 }
 
 #faq {
@@ -411,7 +395,6 @@ a.btnPreinscricion:hover { color:#000; text-decoration:none; }
 /* estilos para seccion de contacto */
 .infoContacto {
 	float:left;
-	width:560px;
 }
 
 .infoContacto h2 { color:#FF6; }
@@ -423,7 +406,6 @@ a.btnPreinscricion:hover { color:#000; text-decoration:none; }
 	margin-left:auto;
 	margin-right:auto;
 	padding-bottom:42px;
-	width:909px;
 }
 
 
@@ -439,6 +421,3 @@ a.btnPreinscricion:hover { color:#000; text-decoration:none; }
   height: 0;
 }
 
-
-
- 
